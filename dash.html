@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Landing Page">
+    <meta name="author" content="Grupo Scout Vatnajökull">
+
+    <title>Landing Page - Grupo Scout Vatnajökull</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dash.css" type="text/css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="index.html">
+      <img src="img/logo_no_underscore.png" alt="Grupo Scout Vatnajökull" style="max-width: 100%; height: auto;">
+    </a>
+  </header>
+
+  <div class="parent">
+    <div class="div1"><img src="img/dash/about.png" alt="Conocenos más"></div>
+    <div class="div3"><img src="img/dash/inscribete.png" alt="Inscríbete a la asociación"></div>
+    <div class="div4"><img src="img/dash/actividades.png" alt="Actividades"></div>
+    <div class="div28"><img src="img/dash/contact.png" alt="Contáctanos" onclick="openPopup('popupContact')"></div>
+  </div>
+
+  <!-- Popups -->
+
+  <div id="popupContact" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popupContact')">&times;</span>
+      <h2>Contáctanos</h2>
+      <p>Puedes ponerte en contacto con nosotros a través de los siguientes medios:</p>
+      <ul>
+        <li><i class="fa fa-envelope"></i> Email: <a href="mailto:gsvatnajokull@gmail.com">gsvatnajokull@gmail.com</a></li>
+        <li><i class="fa fa-twitter"></i> Twitter: <a href="https://twitter.com/gsvatnajokull" target="_blank">@gsvatnajokull</a></li>
+        <li><i class="fa fa-instagram"></i> Instagram: <a href="https://www.instagram.com/gsvatnajokull" target="_blank">@gsvatnajokull</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/dash.js"></script>
+  
+</body>
+
+</html>
