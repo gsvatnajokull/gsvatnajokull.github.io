@@ -40,10 +40,6 @@ header {
     margin-bottom: 40px;
     border-radius: 20px;
     overflow: hidden;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero::before {
