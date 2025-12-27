@@ -123,6 +123,8 @@ main {
     border-radius: 20px;
     box-shadow: 0 4px 12px var(--sombra);
     text-align: left;
+    width: 70%;
+    margin: 0 auto;
     /*transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     max-width: 350px;*/
