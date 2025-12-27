@@ -122,10 +122,10 @@ main {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 12px var(--sombra);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
-    max-width: 350px;
+    max-width: 350px;*/
 }
 
 .section:hover {
