@@ -13,80 +13,80 @@
 </head>
 
 <body>
-    <header>
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Actividades</h1>
-                <p>Bienvenid@ a la sección de actividades del Grupo Scout Vatnajökull.</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="aboutus.html"><i class="fas fa-users"></i> Quienes somos</a></li>
-                <li><a href="actividades.html"><i class="fas fa-project-diagram"></i> Actividades</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Grupo Scout Vatnajökull</h1>
+        <h2>Actividades</h2>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="aboutus.html"><i class="fas fa-users"></i> Quienes somos</a></li>
+        <li><a href="actividades.html"><i class="fas fa-project-diagram"></i> Actividades</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <div class="projects-grid">
-            <div class="section">
-                <img src="img/portfolio/actividad1.jpeg" alt="Actividad 1">
-                <h2>Actividad 1</h2>
-                <button class="saber-mas" onclick="openPopup('popupActividad1')">Saber más</button>
-            </div>
-            <div class="section">
-                <img src="img/portfolio/actividad2.jpeg" alt="Actividad 2">
-                <h2>Actividad 2</h2>
-                <button class="saber-mas" onclick="openPopup('popupActividad2')">Saber más</button>
-            </div>
-            <div class="section">
-                <img src="img/portfolio/actividad3.jpeg" alt="Actividad 3">
-                <h2>Actividad 3</h2>
-                <button class="saber-mas" onclick="openPopup('popupActividad3')">Saber más</button>
-            </div>
-        </div>
-    </main>
-
-    <div class="overlay" id="overlay"></div>
-    <div id="popupActividad1" class="popup">
+  <main>
+    <div class="projects-grid">
+      <div class="section">
+        <img src="img/portfolio/actividad1.jpeg" alt="Actividad 1">
         <h2>Actividad 1</h2>
-        <p>Resumen de actividad 1.</p>
-        <button onclick="closePopup('popupActividad1')">Cerrar</button>
-    </div>
-    <div id="popupActividad2" class="popup">
+        <button class="saber-mas" onclick="openPopup('popupActividad1')">Saber más</button>
+      </div>
+      <div class="section">
+        <img src="img/portfolio/actividad2.jpeg" alt="Actividad 2">
         <h2>Actividad 2</h2>
-        <p>Resumen de actividad 2.</p>
-        <button onclick="closePopup('popupActividad2')">Cerrar</button>
-    </div>
-    <div id="popupActividad3" class="popup">
+        <button class="saber-mas" onclick="openPopup('popupActividad2')">Saber más</button>
+      </div>
+      <div class="section">
+        <img src="img/portfolio/actividad3.jpeg" alt="Actividad 3">
         <h2>Actividad 3</h2>
-        <p>Resumen de actividad 2.</p>
-        <button onclick="closePopup('popupActividad3')">Cerrar</button>
+        <button class="saber-mas" onclick="openPopup('popupActividad3')">Saber más</button>
     </div>
+    </div>
+  </main>
 
-    <footer id="contact">
-        <h2>Ponte en contacto con nosotros</h2>
-        <div class="social-icons">
-            <a href="https://twitter.com/gsvatnajokull"><i class="fab fa-twitter"></i> gsvatnajokull</a>
-            <a href="mailto:gsvatnajokull@gmail.com"><i class="fas fa-envelope"></i> gsvatnajokull@gmail.com</a>
-            <a href="https://www.instagram.com/gsvatnajokull"><i class="fab fa-instagram"></i> gsvatnajokull</a>
-        </div>
-        <p>&copy; 2025 Grupo Scout Vatnajökull.</p>
-    </footer>
+  <div class="overlay" id="overlay"></div>
+  <div id="popupActividad1" class="popup">
+    <h2>Actividad 1</h2>
+    <p>Resumen de actividad 1.</p>
+    <button onclick="closePopup('popupActividad1')">Cerrar</button>
+  </div>
+  <div id="popupActividad2" class="popup">
+    <h2>Actividad 2</h2>
+    <p>Resumen de actividad 2.</p>
+    <button onclick="closePopup('popupActividad2')">Cerrar</button>
+  </div>
+  <div id="popupActividad3" class="popup">
+    <h2>Actividad 3</h2>
+    <p>Resumen de actividad 2.</p>
+    <button onclick="closePopup('popupActividad3')">Cerrar</button>
+  </div>
 
-    <script>
-        function openPopup(popupId) {
-            document.getElementById(popupId).classList.add('show');
-            document.getElementById('overlay').classList.add('show');
-        }
+  <footer id="contact">
+    <h2>Ponte en contacto con nosotros</h2>
+    <div class="social-icons">
+      <a href="https://twitter.com/gsvatnajokull"><i class="fab fa-twitter"></i> gsvatnajokull</a>
+      <a href="mailto:gsvatnajokull@gmail.com"><i class="fas fa-envelope"></i> gsvatnajokull@gmail.com</a>
+      <a href="https://www.instagram.com/gsvatnajokull"><i class="fab fa-instagram"></i> gsvatnajokull</a>
+    </div>
+    <p>&copy; 2025 Grupo Scout Vatnajökull.</p>
+  </footer>
 
-        function closePopup(popupId) {
-            document.getElementById(popupId).classList.remove('show');
-            document.getElementById('overlay').classList.remove('show');
-        }
-    </script>
+  <script>
+    function openPopup(popupId) {
+      document.getElementById(popupId).classList.add('show');
+      document.getElementById('overlay').classList.add('show');
+    }
+
+    function closePopup(popupId) {
+      document.getElementById(popupId).classList.remove('show');
+      document.getElementById('overlay').classList.remove('show');
+    }
+  </script>
 </body>
 </html>
