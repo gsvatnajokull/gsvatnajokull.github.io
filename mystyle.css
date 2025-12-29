@@ -183,7 +183,7 @@ main {
 }
 
 .popup {
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(.9); /* escala inicial */
@@ -202,19 +202,6 @@ main {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
-}
-
-/* Header del popup */
-.popup-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.popup-header h2 {
-  font-size: 1.8rem;
-  margin: 0;
 }
 
 .popup input,
