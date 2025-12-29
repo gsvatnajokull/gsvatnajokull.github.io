@@ -110,17 +110,7 @@ main {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    justify-items: center;
-}
-
-.apuntate-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
     padding: 0 20px;
@@ -183,27 +173,32 @@ main {
 }
 
 .popup {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(.9); /* escala inicial */
-  background: #fff;
-  width: 95%;                  /* ancho mayor, casi todo el viewport */
-  max-width: 600px;            /* límite máximo */
-  border-radius: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s;
-  font-size: 1.2rem;           /* texto más grande */
-  padding: 30px; /* top, right, bottom, left */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--blanco);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px var(--sombra);
+    z-index: 1000;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+
+.popup.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .popup input,
-.popup textarea {
+.popup textarea,
+.popup button {
   width: 100%;
-  margin-bottom: 12px;
-  font-size: 1rem;             /* inputs un poco más grandes */
-  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .popup.show {
@@ -275,22 +270,12 @@ main {
 }
 
 .overlay.active {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .overlay.show {
     display: block;
-}
-
-.cerrar {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  border: none;
-  background: none;
-  font-size: 20px;            /* botón cerrar más grande */
-  cursor: pointer;
 }
 
 /* Floating Donation Button */
