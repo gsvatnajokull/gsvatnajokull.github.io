@@ -110,7 +110,7 @@ main {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* columnas flexibles */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 960px;      /* ancho máximo del grid */
     margin: 0 auto;
