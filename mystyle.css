@@ -192,7 +192,7 @@ main {
 .popup textarea {
   width: 100%;
   margin-bottom: 12px;
-  font-size: 1rem;             /* inputs un poco más grandes */
+  font-size: 1.5rem;             /* inputs un poco más grandes */
   padding: 10px;
 }
 
@@ -230,6 +230,7 @@ main {
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s ease;
+    width: 30%;
 }
 
 .popup button:hover {
