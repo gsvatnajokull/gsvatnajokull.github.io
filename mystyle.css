@@ -230,7 +230,6 @@ main {
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s ease;
-    width: 30%;
 }
 
 .popup button:hover {
