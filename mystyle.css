@@ -176,15 +176,16 @@ main {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
-  background: white;
-  padding: 20px;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 8px;
+  transform: translate(-50%, -50%) scale(.9); /* escala inicial */
+  background: #fff;
+  padding: 30px;               /* más espacio */
+  width: 95%;                  /* ancho mayor, casi todo el viewport */
+  max-width: 600px;            /* límite máximo */
+  border-radius: 10px;
   opacity: 0;
   pointer-events: none;
   transition: 0.3s;
+  font-size: 1.2rem;           /* texto más grande */
 }
 
 .popup.active {
@@ -197,7 +198,9 @@ main {
 .popup textarea,
 .popup button {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 1rem;             /* inputs un poco más grandes */
+  padding: 10px;
 }
 
 .popup.show {
@@ -277,11 +280,11 @@ main {
 
 .cerrar {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
   border: none;
   background: none;
-  font-size: 18px;
+  font-size: 20px;            /* botón cerrar más grande */
   cursor: pointer;
 }
 
