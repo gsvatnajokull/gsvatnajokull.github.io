@@ -110,9 +110,10 @@ main {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* columnas flexibles */
     gap: 20px;
-    width: 100%;
+    max-width: 960px;      /* ancho máximo del grid */
+    margin: 0 auto;
     padding: 0 20px;
     justify-items: center;
 }
@@ -194,13 +195,26 @@ main {
   pointer-events: none;
   transition: 0.3s;
   font-size: 1.2rem;           /* texto más grande */
-  padding: 40px 30px 30px 30px; /* top, right, bottom, left */
+  padding: 30px; /* top, right, bottom, left */
 }
 
 .popup.active {
   opacity: 1;
   pointer-events: auto;
   transform: translate(-50%, -50%) scale(1);
+}
+
+/* Header del popup */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.popup-header h2 {
+  font-size: 1.8rem;
+  margin: 0;
 }
 
 .popup input,
