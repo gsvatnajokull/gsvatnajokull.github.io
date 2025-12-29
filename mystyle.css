@@ -198,15 +198,8 @@ main {
   padding: 30px; /* top, right, bottom, left */
 }
 
-.popup.active {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
-}
-
 .popup input,
-.popup textarea,
-.popup button {
+.popup textarea {
   width: 100%;
   margin-bottom: 12px;
   font-size: 1rem;             /* inputs un poco más grandes */
