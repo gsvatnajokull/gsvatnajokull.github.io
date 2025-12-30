@@ -110,12 +110,10 @@ main {
 
 .projects-grid {
     display: grid;
-    /*grid-template-columns: repeat(3, 1fr);*/
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
     padding: 0 20px;
-    justify-items: center;
     justify-content: center;
 }
 
@@ -127,7 +125,6 @@ main {
     text-align: left;
     width: 70%;
     margin: 0 auto;
-    max-width: 1200px;
     /*transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
     max-width: 350px;*/
