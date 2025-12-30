@@ -50,6 +50,13 @@
           Inscripción
         </button>
       </div>
+      <div class="section" style="width: 100%;">
+        <img src="img/dudas.jpg" alt="Dudas">
+        <h2>¿Dudas? ¿Sugerencias?</h2>
+        <button class="saber-mas" onclick="openPopup('popupDudas')">
+          Buzón de sugerencias
+        </button>
+      </div>
     </div>
   </main>
 
@@ -82,6 +89,21 @@
       <textarea name="mensaje" placeholder="Comentarios (opcional)"></textarea>
       <input type="text" name="_gotcha" style="display:none">
       <button type="submit">Enviar inscripción</button>
+    </form>
+  </div>
+
+  <!-- POPUP SCOUT -->
+  <div id="popupDudas" class="popup">
+    <button onclick="closePopup('popupDudas')">✖</button>
+    <h2>Buzón de sugerencias</h2>
+    <p>Estaremos encantados de atender tus dudas, sugerencias, inquietudes...</p>
+    <form action="https://formspree.io/f/xlgeywdo" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="nombre" placeholder="Asunto" required>
+      <textarea name="mensaje" placeholder="Cuéntanos" required></textarea>
+      <input type="text" name="_gotcha" style="display:none">
+      <button type="submit">Enviar al buzón de sugerencias</button>
     </form>
   </div>
 
