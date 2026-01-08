@@ -192,7 +192,7 @@ main {
 .popup textarea {
   width: 100%;
   margin-bottom: 12px;
-  font-size: 1.8rem;             /* inputs un poco más grandes */
+  font-size: 1.5rem;             /* inputs un poco más grandes */
   padding: 10px;
 }
 
