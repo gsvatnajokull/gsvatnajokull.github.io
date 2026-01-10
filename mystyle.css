@@ -156,7 +156,8 @@ main {
 }
 
 .saber-mas {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     background: linear-gradient(90deg, var(--rojo), var(--rojo-oscuro));
     color: var(--blanco);
     padding: 10px 20px;
@@ -165,7 +166,6 @@ main {
     font-weight: 500;
     transition: all 0.3s ease;
     cursor: pointer;
-    text-align: center;
 }
 
 .saber-mas:hover {
