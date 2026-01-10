@@ -559,3 +559,12 @@ footer {
     }
 }
 
+.anuncio-destacado {
+  background: #e6f4ff;
+  color: #004a7c;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
