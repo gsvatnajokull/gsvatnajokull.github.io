@@ -236,10 +236,6 @@ main {
     background-color: var(--rojo-oscuro);
 }
 
-.popup-disabled {
-  opacity: 1;
-}
-
 .popup-disabled fieldset {
   border: none;
 }
