@@ -78,6 +78,7 @@
   </div>
 
   <!-- POPUP SCOUT -->
+  <!-- TODO: Habilitar cuando llegue la fecha
   <div id="popupScout" class="popup">
     <button onclick="closePopup('popupScout')">✖</button>
     <h2>Inscripción Scout</h2>
@@ -90,9 +91,30 @@
       <input type="text" name="_gotcha" style="display:none">
       <button type="submit">Enviar inscripción</button>
     </form>
+  </div>-->
+
+  <div id="popupScout" class="popup popup-disabled">
+    <button class="close-btn" onclick="closePopup('popupScout')">✖</button>
+    <h2>Inscripción Scout</h2>
+
+    <div class="popup-alert">
+      ⛔ Inscripciones cerradas. Se abren el 1 de junio de 2026.
+    </div>
+
+    <p>Requisitos: tener entre 9 y 17 años y ganas de aprender disfrutando de la naturaleza.</p>
+
+    <form>
+      <fieldset disabled>
+        <input type="text" placeholder="Nombre del interesad@">
+        <input type="number" placeholder="Edad">
+        <input type="email" placeholder="Email de contacto">
+        <textarea placeholder="Comentarios (opcional)"></textarea>
+        <button type="submit">Enviar inscripción</button>
+      </fieldset>
+    </form>
   </div>
 
-  <!-- POPUP SCOUT -->
+  <!-- POPUP DUDAS -->
   <div id="popupDudas" class="popup">
     <button onclick="closePopup('popupDudas')">✖</button>
     <h2>Buzón de sugerencias</h2>
