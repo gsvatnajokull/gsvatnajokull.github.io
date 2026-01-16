@@ -568,3 +568,24 @@ footer {
   font-size: 2rem;
   font-weight: 600;
 }
+
+.contenedor-logos {
+  display: flex;
+  justify-content: center; /* centra las dos imágenes */
+  gap: 30px;
+  text-align: center; /* centra subtítulos */
+}
+
+.logo img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--rojo);
+}
