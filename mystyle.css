@@ -589,3 +589,15 @@ footer {
   font-size: 14px;
   color: var(--rojo);
 }
+
+.bloque-foto {
+  display: flex;
+  align-items: center; /* centra verticalmente */
+  gap: 20px;
+}
+
+.bloque-foto img {
+  max-width: 3000px;
+  width: 100%;
+  height: auto;
+}
